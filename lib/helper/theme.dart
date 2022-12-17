@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'constants.dart';
 
-// Let's apply light and dark theme on our app
-
 ThemeData lightThemeData(BuildContext context) {
   return ThemeData.light().copyWith(
     primaryColor: primaryColor,
@@ -17,7 +15,6 @@ ThemeData lightThemeData(BuildContext context) {
       secondary: secondaryColor,
       error: errorColor,
     ),
-
     inputDecorationTheme: inputDecorationTheme.copyWith(
         fillColor: primaryColor.withOpacity(0.05)),
   );

@@ -1,6 +1,15 @@
+import 'package:chat_app/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'theme.dart';
-void main() {
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'helper/bloc_observer.dart';
+import 'helper/theme.dart';
+import 'views/screens/splash/splash_screen.dart';
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
+  Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
 }
 
@@ -15,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: lightThemeData(context),
       darkTheme: darkThemeData(context),
-      home: Container(),
+      home: const SplashScreen(),
     );
   }
 }
