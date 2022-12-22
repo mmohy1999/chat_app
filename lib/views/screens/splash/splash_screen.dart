@@ -1,3 +1,5 @@
+import 'package:chat_app/views/layouts/bottom_navigation.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -12,6 +14,7 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  var user=FirebaseAuth.instance.currentUser;
   @override
   void initState() {
     super.initState();
@@ -20,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
       () => Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => const WelcomeScreen(),
+            builder: (context) =>user!=null? const BottomNavigationLayout():const WelcomeScreen(),
           )),
     );
   }

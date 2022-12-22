@@ -15,6 +15,14 @@ ThemeData lightThemeData(BuildContext context) {
       secondary: secondaryColor,
       error: errorColor,
     ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+
+      backgroundColor: Colors.white,
+      selectedItemColor: contentColorLightTheme.withOpacity(0.7),
+      unselectedItemColor: contentColorLightTheme.withOpacity(0.32),
+      selectedIconTheme: const IconThemeData(color: primaryColor),
+      showUnselectedLabels: true,
+    ),
     inputDecorationTheme: inputDecorationTheme.copyWith(
         fillColor: primaryColor.withOpacity(0.05)),
   );
@@ -33,6 +41,13 @@ ThemeData darkThemeData(BuildContext context) {
       secondary: secondaryColor,
       error: errorColor,
     ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: contentColorLightTheme,
+      selectedItemColor: Colors.white70,
+      unselectedItemColor: contentColorDarkTheme.withOpacity(0.32),
+      selectedIconTheme: const IconThemeData(color: primaryColor),
+      showUnselectedLabels: true,
+    ),
     inputDecorationTheme: inputDecorationTheme,
   );
 }
@@ -47,4 +62,5 @@ final inputDecorationTheme = InputDecorationTheme(
     borderSide: BorderSide.none,
     borderRadius: BorderRadius.all(Radius.circular(50)),
   ),
+
 );

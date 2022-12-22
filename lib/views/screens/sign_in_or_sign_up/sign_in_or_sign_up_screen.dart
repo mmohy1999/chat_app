@@ -3,8 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../controllers/cubit/auth/auth_cubit.dart';
 import '../../../helper/constants.dart';
 import '../../components/primary_button.dart';
-import '../sign_in/sign_in_screen.dart';
-import '../sign_up/sign_up_screen.dart';
 
 class SignInOrSignUpScreen extends StatelessWidget {
   const SignInOrSignUpScreen({super.key});

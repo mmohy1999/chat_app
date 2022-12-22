@@ -1,4 +1,5 @@
 import 'package:chat_app/models/user.dart';
+import 'package:chat_app/views/screens/chats/chats_screen.dart';
 import 'package:chat_app/views/screens/forget_password/forget_password_screen.dart';
 import 'package:chat_app/views/screens/otp/otp_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -128,8 +129,15 @@ class AuthCubit extends Cubit<AuthState> {
     ));
 
   }
-  goToHome(){
-    print('home');
+  goToHome(BuildContext context){
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(
+          builder: (context) =>   const ChatsScreen(),
+
+      ),
+      (route) => false,
+    );
     showToast('welcome');
   }
   goToForgetPassword(BuildContext context,BuildContext cubitContext){
@@ -170,7 +178,7 @@ class AuthCubit extends Cubit<AuthState> {
             .then((value) async{
               if(value.user!.phoneNumber!=null) {
                 Navigator.pop(context);
-                goToHome();
+                goToHome(context);
               }else{
            await getPhone(value.user!.uid).then((phone){
              showToast('please verify phone number' );
@@ -200,8 +208,6 @@ class AuthCubit extends Cubit<AuthState> {
               email: userModel.email, password: passwordController.text)
               .then((value) {
             value.user!.updateDisplayName(userModel.name);
-            value.user!.updatePhotoURL(
-                'https://firebasestorage.googleapis.com/v0/b/chat-6cf94.appspot.com/o/images%2Fdefualt_avater.png?alt=media&token=9125ad8d-e438-40f5-b6e3-7e12aa76d480');
             userModel.uid = value.user!.uid;
             addUserToFireStore(userModel);
             showToast('account created successfully');
@@ -224,7 +230,7 @@ class AuthCubit extends Cubit<AuthState> {
       verificationCompleted: (PhoneAuthCredential credential) {
       },
       verificationFailed: (FirebaseAuthException e) {
-        print(e.toString());
+        showToast(e.message!);
       },
       codeSent: (String verificationId, int? resendToken) {
         this.verificationId=verificationId;
@@ -243,13 +249,13 @@ class AuthCubit extends Cubit<AuthState> {
     firebaseAuth.currentUser!.linkWithCredential(credential)
         .then((value){
           if(state=='signIn') {
-            goToHome();
+            goToHome(context);
           } else {
             Navigator.pop(context);
           }
     } );
     }on FirebaseAuthException catch(e){
-      print(e.message);
+      showToast(e.message!);
     }
     }
   }
