@@ -202,10 +202,11 @@ class AuthCubit extends Cubit<AuthState> {
       showCircularProgressDialog(context);
       if(! await checkPhoneNumber(phoneController.text)){
         UserModel userModel = UserModel(
-            nameController.text, phoneController.text, emailController.text.trim());
+          name:  nameController.text
+           ,phone:  phoneController.text,email:  emailController.text.trim());
         try {
           firebaseAuth.createUserWithEmailAndPassword(
-              email: userModel.email, password: passwordController.text)
+              email: userModel.email!, password: passwordController.text)
               .then((value) {
             value.user!.updateDisplayName(userModel.name);
             userModel.uid = value.user!.uid;

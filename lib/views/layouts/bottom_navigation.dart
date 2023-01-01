@@ -1,3 +1,4 @@
+import 'package:chat_app/controllers/cubit/chat/chat_cubit.dart';
 import 'package:chat_app/controllers/cubit/navigation/navigation_cubit.dart';
 import 'package:chat_app/helper/constants.dart';
 import 'package:flutter/material.dart';
@@ -8,8 +9,11 @@ class BottomNavigationLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => NavigationCubit(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => NavigationCubit()),
+        BlocProvider(create: (context) => ChatCubit()),
+      ],
       child: BlocBuilder<NavigationCubit, NavigationState>(
         builder: (context, state) {
           NavigationCubit cubit =NavigationCubit.get(context);
@@ -34,12 +38,14 @@ class BottomNavigationLayout extends StatelessWidget {
             bottomNavigationBar: BottomNavigationBar(
                 type: BottomNavigationBarType.fixed,
                 currentIndex: cubit.currentIndex,
-                onTap: cubit.changeCurrentIndex,
+                onTap: (index) => cubit.changeCurrentIndex(index, ChatCubit.get(context)),
                 items: cubit.bottomNavigationItems
             ),
             floatingActionButton:cubit.title!='Chats'?null: FloatingActionButton(
               onPressed: () {
-                cubit.changeCurrentIndex(1);
+                cubit.changeCurrentIndex(1,ChatCubit.get(context));
+
+
               },
               backgroundColor: primaryColor,
               child: const Icon(

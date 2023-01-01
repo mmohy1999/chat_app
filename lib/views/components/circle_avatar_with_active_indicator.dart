@@ -6,20 +6,24 @@ class CircleAvatarWithActiveIndicator extends StatelessWidget {
     Key? key,
     this.image,
     this.radius = 24,
-    this.isActive=false,
+    this.isActive=false, this.isNetworkImage=true,
   }) : super(key: key);
 
   final String? image;
   final double? radius;
-  final bool? isActive;
+  final bool? isActive,isNetworkImage;
 
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        isNetworkImage!?
         CircleAvatar(
           radius: radius,
           backgroundImage: NetworkImage(image!),
+        ):CircleAvatar(
+          radius: radius,
+          backgroundImage: AssetImage(image!),
         ),
         if (isActive!)
           Positioned(

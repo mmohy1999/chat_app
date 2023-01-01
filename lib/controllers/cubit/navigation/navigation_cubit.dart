@@ -1,4 +1,6 @@
+import 'package:chat_app/controllers/cubit/chat/chat_cubit.dart';
 import 'package:chat_app/views/screens/chats/chats_screen.dart';
+import 'package:chat_app/views/screens/people/contacts_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -34,17 +36,20 @@ class NavigationCubit extends Cubit<NavigationState> {
 
   List screens=[
     const ChatsScreen(),
-    const Scaffold(body: Center( child: Text('People')),),
+    const PeopleScreen(),
     const Scaffold(body: Center( child: Text('calls')),),
     const Scaffold(body: Center( child: Text('profile')),),
   ];
 
 
-  changeCurrentIndex(int index){
+  changeCurrentIndex(int index, ChatCubit cubit){
     if(currentIndex!=index){
       title=index==0?'Chats':index==1?'People':index==2?'Calls':'Profile';
       currentIndex=index;
       emit(ChangeIndex());
+      if(index==1){
+        cubit.getContacts();
+      }
     }
   }
 

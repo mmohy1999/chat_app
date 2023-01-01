@@ -14,4 +14,3 @@ const logoLightTheme = "assets/icons/Only_logo_light_theme.svg";
 
 const requiredField = "This field is required";
 const invalidEmail = "Enter a valid email address";
-

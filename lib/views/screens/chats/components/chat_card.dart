@@ -25,6 +25,7 @@ class ChatCard extends StatelessWidget {
         child: Row(
           children: [
             CircleAvatarWithActiveIndicator(
+              isNetworkImage:chat.user.image!=null ,
               image: chat.user.image ?? 'assets/default_avatar.png',
             ),
             Expanded(
