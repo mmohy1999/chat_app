@@ -1,6 +1,6 @@
 # Freedom Chat App
 <div align="center">
-![Project Logo](https://github.com/user-attachments/assets/0d493596-353e-4182-817f-a77d32f331bd))
+    <img src="https://github.com/user-attachments/assets/0d493596-353e-4182-817f-a77d32f331bd" />
 </div>
 ## 📚 About
 a stream chat app with firebase Authentication and zego Cloud kit and get users from Contacts phone
