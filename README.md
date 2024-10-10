@@ -8,7 +8,7 @@
 
 
 ## 🚀 Streaming Chat
-[![Stream Video](https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4)](https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4)
+[![Stream Video](https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4)](https://github.com/mmohy1999/chat_app/blob/main/screenshots/10-chat_dark.jpg?raw=true)
 
 
 
@@ -28,7 +28,7 @@
 ### Signup
 | Dark | Light |
 |----------|----------|
-| ![signup_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/3-signup_dark.jpg) | ![signup_light]([path/to/screenshot6.png](https://github.com/mmohy1999/chat_app/blob/main/screenshots/3-signup.jpg)) |
+| ![signup_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/3-signup_dark.jpg) | ![signup_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/3-signup.jpg) |
 
 ### SignIn
 | Dark | Light |
@@ -38,7 +38,7 @@
 ### Forget Password
 | Dark | Light |
 |----------|----------|
-| ![forget_password_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/5-forget_password_dark.jpg) | ![forget_password_light]([path/to/screenshot10.png](https://github.com/mmohy1999/chat_app/blob/main/screenshots/5-forget_password.jpg)) |
+| ![forget_password_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/5-forget_password_dark.jpg) | ![forget_password_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/5-forget_password.jpg) |
 
 ### Home
 | Dark | Light |
@@ -58,12 +58,12 @@
 ### Profile
 | Dark | Light |
 |----------|----------|
-| ![profile_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/9-profile_dark.jpg) | ![profile_light]([path/to/screenshot18.png](https://github.com/mmohy1999/chat_app/blob/main/screenshots/9-profile.jpg)) |
+| ![profile_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/9-profile_dark.jpg) | ![profile_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/9-profile.jpg) |
 
 ### Chat
 | Dark | Light |
 |----------|----------|
-| ![chat_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/10-chat_dark.jpg) | ![chat_light]([path/to/screenshot20.png](https://github.com/mmohy1999/chat_app/blob/main/screenshots/10-chat.jpg)) |
+| ![chat_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/10-chat_dark.jpg) | ![chat_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/10-chat.jpg) |
 
 ### Media View
 | Image | Vedio |
