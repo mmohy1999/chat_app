@@ -1,13 +1,16 @@
 # Freedom Chat App
+<div align="center">
 ![Project Logo](https://github.com/user-attachments/assets/0d493596-353e-4182-817f-a77d32f331bd))
-
+</div>
 ## 📚 About
 a stream chat app with firebase Authentication and zego Cloud kit and get users from Contacts phone
 
 
 ## 🚀 Streaming Chat
 <div align="center">
-  <iframe width="560" height="315" src="https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4" frameborder="0" allowfullscreen></iframe>
+  <video width="600" controls>
+    <source src="https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4" type="video/mp4">
+  </video>
 </div>
 
 
