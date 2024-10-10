@@ -2,40 +2,71 @@
 ![Project Logo](https://github.com/user-attachments/assets/0d493596-353e-4182-817f-a77d32f331bd))
 
 ## 📚 About
-a stream chat app with firebase Authentication and zego Cloud kit 
+a stream chat app with firebase Authentication and zego Cloud kit and get users from Contacts phone
 
+
+## 🚀 Streaming Chat
+<div align="center">
+  <iframe width="560" height="315" src="https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4" frameborder="0" allowfullscreen></iframe>
+</div>
 
 
 ## 📸 Screenshots
 
 ### Welcome 
-| Screen 1 | Screen 2 |
+|Dark | Light |
 |----------|----------|
-| ![Screenshot 1](https://github.com/mmohy1999/chat_app/blob/main/screenshots/1-welcome.jpg?raw=true) | ![Screenshot 2](https://github.com/mmohy1999/chat_app/blob/main/screenshots/1-welcome_dark.jpg) |
+| ![Welcome dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/1-welcome_dark.jpg?raw=true) | ![Welcome light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/1-welcome.jpg) |
 
-### Screen Set 2
-| Screen 3 | Screen 4 |
+### Sign Or Signup
+| Dark | Light |
 |----------|----------|
-| ![Screenshot 3](path/to/screenshot3.png) | ![Screenshot 4](path/to/screenshot4.png) |
+| ![sign_or_signup_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/2-sign_or_signup_dark.jpg) | ![ign_or_signup_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/2-sign_or_signup.jpg) |
 
-### Screen Set 3
-| Screen 5 | Screen 6 |
+### Signup
+| Dark | Light |
 |----------|----------|
-| ![Screenshot 5](path/to/screenshot5.png) | ![Screenshot 6](path/to/screenshot6.png) |
+| ![signup_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/3-signup_dark.jpg) | ![signup_light]([path/to/screenshot6.png](https://github.com/mmohy1999/chat_app/blob/main/screenshots/3-signup.jpg)) |
 
-### Screen Set 4
-| Screen 7 | Screen 8 |
+### SignIn
+| Dark | Light |
 |----------|----------|
-| ![Screenshot 7](path/to/screenshot7.png) | ![Screenshot 8](path/to/screenshot8.png) |
+| ![signin_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/4-signin_dark.jpg) | ![signin_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/4-signin.jpg) |
 
-### Screen Set 5
-| Screen 9 | Screen 10 |
+### Forget Password
+| Dark | Light |
 |----------|----------|
-| ![Screenshot 9](path/to/screenshot9.png) | ![Screenshot 10](path/to/screenshot10.png) |
+| ![forget_password_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/5-forget_password_dark.jpg) | ![forget_password_light]([path/to/screenshot10.png](https://github.com/mmohy1999/chat_app/blob/main/screenshots/5-forget_password.jpg)) |
 
-### Screen Set 6
-| Screen 11 | Screen 12 |
+### Home
+| Dark | Light |
 |----------|----------|
-| ![Screenshot 11](path/to/screenshot11.png) | ![Screenshot 12](path/to/screenshot12.png) |
+| ![home_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/6-home_dark.jpg) | ![home_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/6-home.jpg) |
+
+### Contacts
+| Dark | Light |
+|----------|----------|
+| ![conacts_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/7-conacts_dark.jpg) | ![conacts_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/7-conacts.jpg) |
+
+### Calls
+| Dark | Light |
+|----------|----------|
+| ![calls_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/8-calls_dark.jpg) | ![calls_light](https://github.com/mmohy1999/chat_app/blob/main/screenshots/8-calls.jpg) |
+
+### Profile
+| Dark | Light |
+|----------|----------|
+| ![profile_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/9-profile_dark.jpg) | ![profile_light]([path/to/screenshot18.png](https://github.com/mmohy1999/chat_app/blob/main/screenshots/9-profile.jpg)) |
+
+### Chat
+| Dark | Light |
+|----------|----------|
+| ![chat_dark](https://github.com/mmohy1999/chat_app/blob/main/screenshots/10-chat_dark.jpg) | ![chat_light]([path/to/screenshot20.png](https://github.com/mmohy1999/chat_app/blob/main/screenshots/10-chat.jpg)) |
+
+### Media View
+| Image | Vedio |
+|----------|----------|
+| ![imagr_view](https://github.com/mmohy1999/chat_app/blob/main/screenshots/12-image.jpg) | ![vedio_view](https://github.com/mmohy1999/chat_app/blob/main/screenshots/11-vedio.jpg) |
+
 
 
