@@ -2,15 +2,14 @@
 <div align="center">
     <img src="https://github.com/user-attachments/assets/0d493596-353e-4182-817f-a77d32f331bd" />
 </div>
-## 📚 About
 
+## 📚 About
 -a stream chat app with firebase Authentication and zego Cloud kit and get users from Contacts phone
 
 
 ## 🚀 Streaming Chat
-<div align="center">
-  <video src="https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4" width="400" />
-</div>
+[![stream]](https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4)
+
 
 
 
