@@ -8,8 +8,7 @@
 
 
 ## 🚀 Streaming Chat
-[![Stream Video](https://github.com/mmohy1999/chat_app/blob/main/screenshots/vedio.mp4)](https://github.com/mmohy1999/chat_app/blob/main/screenshots/10-chat_dark.jpg?raw=true)
-
+![Preview](/screenshots/vedio.mp4)
 
 
 
