@@ -8,7 +8,7 @@
 
 
 ## 🚀 Streaming Chat
-![Preview](/screenshots/vedio.mp4)
+![Stream Video](/screenshots/vedio.gif)
 
 
 
